@@ -8,7 +8,7 @@ inputBox.addEventListener('click',()=>{
 });
 
 async function filterSuggestions(){
-    const response = await fetch("./data/data.json");
+    const response = await fetch("./data.json");
     const keywordsList = await response.json();
     let suggest = [];
     let input = this.value.trim();
